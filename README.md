@@ -37,3 +37,36 @@ O projeto utiliza o padrão de separação de responsabilidades para facilitar a
 1. Clone o repositório ou baixe os arquivos fonte:
    ```bash
    git clone [https://github.com/SEU_USUARIO/contador-de-horas.git](https://github.com/SEU_USUARIO/contador-de-horas.git)
+
+
+Acesse a pasta do projeto:
+
+Bash
+cd contador-de-horas
+Execute a aplicação a partir do arquivo de interface:
+
+Bash
+python layout.py
+📦 Como Gerar o Executável (.exe)
+Para compilar a aplicação em um único arquivo executável para Windows (sem necessidade do Python na máquina de destino):
+
+Instale o PyInstaller:
+
+Bash
+pip install pyinstaller
+Compile o projeto a partir do layout.py:
+
+Bash
+python -m PyInstaller --onefile --noconsole layout.py
+O executável final será gerado dentro da pasta dist/.
+
+Estrutura de Arquivos Gerada no Sistema (C:\Contador)
+Após a execução, a aplicação gerencia automaticamente o seguinte diretório:
+
+Plaintext
+C:\Contador\
+├── Arquivos\
+│   └── Apontamento_YYYYMMDD_HHMMSS.txt
+└── Logs\
+    └── app_YYYYMMDD.log
+
